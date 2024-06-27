@@ -10,7 +10,7 @@ namespace EditorHtml
             Console.BackgroundColor = ConsoleColor.Blue;
             Console.ForegroundColor = ConsoleColor.Black;
             DrawScreen();
-
+            WriteOptions();
         }
 
         public static void DrawScreen(){
@@ -37,6 +37,11 @@ namespace EditorHtml
                 Console.Write("|");
                 Console.Write("\n");               
             }
+        }
+
+        public static void WriteOptions(){
+            Console.SetCursorPosition(3,2); //coluna 3, linha 2
+            Console.WriteLine("Editor HTML");
         }
     }
 }
