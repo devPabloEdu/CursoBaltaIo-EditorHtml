@@ -18,6 +18,8 @@ namespace EditorHtml
 
         public static void Replace(string text){
             var strong = new Regex(@"<\s*strong[^>]*.(.*?),\s*/\s*strong>");
+            var words = text.Split(' ');
+            
         }
     }
 }
