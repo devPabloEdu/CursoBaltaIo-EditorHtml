@@ -5,7 +5,7 @@ namespace EditorHtml
     {
         static void Main(string[] args)
         {
-
+            Menu.Show();
         }
     }    
 }
