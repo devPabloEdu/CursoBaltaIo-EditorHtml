@@ -39,7 +39,8 @@ namespace EditorHtml
         }
 
         public static void SaveFile(StringBuilder file){
-            Console.Clear();
+                Console.Clear();
+                 Viewer.Show(file.ToString());
                 Console.WriteLine("Qual caminho deseja salvar?");
                 var path = Console.ReadLine();
                 using (var newSavedFile = new StreamWriter(path))

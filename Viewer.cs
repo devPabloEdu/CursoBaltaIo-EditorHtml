@@ -11,7 +11,8 @@ namespace EditorHtml
             Console.WriteLine("MODO DE VISUALIZAÇÃO");
             Console.WriteLine("----------------------");
             Replace(text);
-            Console.WriteLine("----------------------");
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("Pressione qualquer tecla para voltar ao menu");
             Console.ReadKey();
             Menu.Show();
         }
