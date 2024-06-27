@@ -24,7 +24,7 @@ namespace EditorHtml
                 file.Append(Environment.NewLine);
             } while (Console.ReadKey().Key != ConsoleKey.Escape);
 
-            Viewer.Show(file.ToString());
+            
             Console.WriteLine("-------------");
             Console.WriteLine("Deseja salvar o arquivo?");
             Console.WriteLine("-------------");
