@@ -24,6 +24,7 @@ namespace EditorHtml
                 file.Append(Environment.NewLine);
             } while (Console.ReadKey().Key != ConsoleKey.Escape);
 
+            Viewer.Show(file.ToString());
             Console.WriteLine("-------------");
             Console.WriteLine("Deseja salvar o arquivo?");
             Console.WriteLine("-------------");
@@ -40,7 +41,6 @@ namespace EditorHtml
 
         public static void SaveFile(StringBuilder file){
                 Console.Clear();
-                 Viewer.Show(file.ToString());
                 Console.WriteLine("Qual caminho deseja salvar?");
                 var path = Console.ReadLine();
                 using (var newSavedFile = new StreamWriter(path))
